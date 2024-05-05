@@ -1,4 +1,4 @@
-'''# array equality (6kyu).py
+'''# array equality (6 kyu).py
 
 Given two arrays a and b write a function comp(a, b) (orcompSame(a, b)) that checks
 whether the two arrays have the "same" elements, with the same multiplicities

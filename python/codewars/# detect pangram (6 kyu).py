@@ -1,4 +1,4 @@
-'''# detect pangram (6kyu).py
+'''# detect pangram (6 kyu).py
 
 A pangram is a sentence that contains every single letter of the alphabet at least once.
 

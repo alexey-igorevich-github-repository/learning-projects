@@ -1,4 +1,4 @@
-'''# return digital_root (6kyu).py
+'''# return digital_root (6 kyu).py
 
 Digital root is the recursive sum of all the digits in a number.
 

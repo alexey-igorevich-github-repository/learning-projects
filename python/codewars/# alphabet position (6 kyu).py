@@ -1,4 +1,4 @@
-'''# alphabet_position (6kyu).py
+'''# alphabet_position (6 kyu).py
 
 Welcome.
 

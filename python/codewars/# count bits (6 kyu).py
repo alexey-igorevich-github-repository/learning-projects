@@ -1,4 +1,4 @@
-''' # count bits (6kyu).py
+''' # count bits (6 kyu).py
 Write a function that takes an integer as input, 
 and returns the number of bits that are equal to one in 
 the binary representation of that number. 

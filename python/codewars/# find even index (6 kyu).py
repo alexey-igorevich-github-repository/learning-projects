@@ -1,4 +1,4 @@
-'''# find even index (6kyu).py
+'''# find even index (6 kyu).py
 
 You are going to be given an array of integers. 
 Your job is to take that array and find an index N 

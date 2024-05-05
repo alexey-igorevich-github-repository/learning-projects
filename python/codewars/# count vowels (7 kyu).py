@@ -1,4 +1,4 @@
-'''# count vowels (7kyu).py
+'''# count vowels (7 kyu).py
 
 Return the number (count) of vowels in the given string.
 
