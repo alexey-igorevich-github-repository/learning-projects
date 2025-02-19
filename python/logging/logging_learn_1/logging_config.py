@@ -6,7 +6,7 @@ logging.StreamHandler         # specialniy obrbotchik dlya konsoli
 class ConsoleFilter(logging.Filter):   #filtr zadaetsa cherez class
     def filter(self, record):
         #print(record.__dict__)
-        # {'name': 'my_python_logger', 'msg': 'message12345', 'args': (), 'levelname': 'INFO', 'levelno': 20, 'pathname': '/home/user/logging-learn.py', 'filename': 'logging-learn.py', 'module': 'logging-learn', 'exc_info': None, 'exc_text': None, 'stack_info': None, 'lineno': 13, 'funcName': 'main', 'created': 12345.67, 'msecs': 300.0, 'relativeCreated': 12345.67, 'thread': 1111, 'threadName': 'MainThread', 'processName': 'MainProcess', 'process': 1234, 'taskName': None}
+        # {'name': 'my_python_logger', 'msg': 'message 777', 'args': (), 'levelname': 'INFO', 'levelno': 20, 'pathname': 'c:\\Users\\User\\Desktop\\PROJECTS\\mass-pdf-converter\\logging-learn.py', 'filename': 'logging-learn.py', 'module': 'logging-learn', 'exc_info': None, 'exc_text': None, 'stack_info': None, 'lineno': 13, 'funcName': 'main', 'created': 1720401547.300147, 'msecs': 300.0, 'relativeCreated': 30.13014793395996, 'thread': 8180, 'threadName': 'MainThread', 'processName': 'MainProcess', 'process': 5972, 'taskName': None}
         if hasattr(record, 'status_code') and record.status_code != 200:
             print('warning http status is not OK')        
         return True
@@ -108,7 +108,7 @@ logger_conf = {
     },
     'filters': {
         'my_console_filter': {
-            '()': ConsoleFilter     # vizov nashego filtra iz klassa vot tak pishetsa (cherez vot takoy slovar. teper v obrabotchike nado ukazat nije
+            '()': ConsoleFilter     # vizov nashego filtra iz klassa vot tak pishetsa (cherez vot takoy slovar. Teper v obrabotchike nado ukazat nije)
         },
         'my_notset_filter': {
             '()': NotsetFilter     
@@ -131,9 +131,9 @@ logger_conf = {
     },
     'loggers': {
         'my_python_logger': {
-            'level': 'INFO',
+            'level': 'DEBUG',
             'handlers': ['console', 'file_notset', 'file_debug', 'file_info', 'file_warning', 'file_error', 'file_critical'],          # ukazivaem spisok obrbotchikov kotorie mi budem ispolzovat
-            'filters': ['my_console_filter']
+            'filters': []
         }
     }
 }
